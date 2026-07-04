@@ -64,8 +64,8 @@ export const testimonials = [
 ];
 
 export const pricing = [
-  { item: "Permak Celana", price: "Mulai Rp25.000" },
-  { item: "Permak Kemeja", price: "Mulai Rp30.000" },
+  { item: "Permak Celana", price: "Mulai Rp20.000" },
+  { item: "Permak Kemeja", price: "Mulai Rp25.000" },
   { item: "Jahit Baju Custom", price: "Mulai Rp150.000" },
   { item: "Jahit Dress/Kebaya", price: "Mulai Rp250.000" },
 ];

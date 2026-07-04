@@ -8,9 +8,11 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 border-b border-slate-100 bg-white/90 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-slate-900 text-white shadow-lg shadow-slate-200">
-            <Scissors size={22} />
-          </div>
+          <img
+            src="/logoKT.png"
+            alt="Logo"
+            className="flex h-11 w-11 items-center justify-center rounded-2xl"
+          />
           <div>
             <h1 className="text-lg font-bold leading-tight">Atelier Jahit</h1>
             <p className="text-xs text-slate-500">
@@ -33,7 +35,7 @@ const Navbar = () => {
             href="#portfolio"
             className="text-sm font-medium hover:text-amber-600"
           >
-            Portfolio
+            Jahitan
           </a>
           <a href="#harga" className="text-sm font-medium hover:text-amber-600">
             Harga
@@ -47,12 +49,12 @@ const Navbar = () => {
         </nav>
 
         <div className="hidden md:block">
-          <a
-            href="#kontak"
+          <button
+            onClick={openWhatsApp}
             className="rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
           >
             Pesan Sekarang
-          </a>
+          </button>
         </div>
 
         <button
@@ -86,6 +88,22 @@ const Navbar = () => {
       )}
     </header>
   );
+};
+
+const whatsappNumber = "+6289674147203";
+
+const openWhatsApp = () => {
+  const message = encodeURIComponent(`Halo Krawang Tailor,
+
+Saya ingin berkonsultasi mengenai jasa jahit.
+
+Nama :
+Jenis Layanan :
+Keterangan :
+
+Terima kasih.`);
+
+  window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
 };
 
 export default Navbar;

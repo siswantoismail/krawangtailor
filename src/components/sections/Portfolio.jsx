@@ -14,7 +14,7 @@ const Portfolio = () => {
     <section id="portfolio" className="bg-slate-50 py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionTitle
-          badge="Portfolio"
+          badge="Jahitan Kami"
           title="Contoh Hasil Jahitan dan Permak"
           subtitle="Beberapa contoh pengerjaan untuk menunjukkan kualitas, kerapian, dan variasi layanan kami."
         />

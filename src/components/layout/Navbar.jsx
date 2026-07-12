@@ -14,7 +14,7 @@ const Navbar = () => {
             className="flex h-11 w-11 items-center justify-center rounded-2xl"
           />
           <div>
-            <h1 className="text-lg font-bold leading-tight">Atelier Jahit</h1>
+            <h1 className="text-lg font-bold leading-tight">Krawang Tailor</h1>
             <p className="text-xs text-slate-500">
               Custom, Permak, dan Reparasi
             </p>
@@ -90,7 +90,7 @@ const Navbar = () => {
   );
 };
 
-const whatsappNumber = "+6289674147203";
+const whatsappNumber = "+6282259161094";
 
 const openWhatsApp = () => {
   const message = encodeURIComponent(`Halo Krawang Tailor,
